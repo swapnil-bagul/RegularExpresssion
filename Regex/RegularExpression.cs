@@ -22,9 +22,14 @@ namespace RegExp
         //string[] mobileNumberInput = { "91 7410177019", "01 3634345678", "917410177019", "91 741017701", "91 0123344556", "91 7410177016", "912 7410177019", "76 7410177019" };
         //string mobileNumberPattern = "^[91]{2}[ ]{1}[6-9]{1}[0-9]{9}$";
         //UC5
-        string[] passwordInput = { "qwertyui","asdfghjkl","asdebnd","vbnnmkmP","poiuh","zxcvbnmlk", "qwertyuP" };
-        string passwordPattern = "^[a-z]{8}$";
-
+        //string[] passwordInput = { "qwertyui","asdfghjkl","asdebnd","vbnnmkmP","poiuh","zxcvbnmlk", "qwertyuP" };
+        //string passwordPattern = "^[a-z]{8}$";
+        //UC6
+        /// <summary>
+        /// (?=.*[A-Z]) At least on Capital Exist
+        /// </summary>
+        string[] passwordInput = { "qWertyui", "asdmTThl", "asdexbnd", "vbnnmkmP", "poiuh", "zxcvbnmlk", "qwertyuP" };
+        string passwordPattern = "^(?=.*[A-Z])[a-zA-Z]{8}$";
         public void PatternChecking()
         {
             //Used Predefined Regex Class
