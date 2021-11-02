@@ -28,8 +28,14 @@ namespace RegExp
         /// <summary>
         /// (?=.*[A-Z]) At least on Capital Exist
         /// </summary>
-        string[] passwordInput = { "qWertyui", "asdmTThl", "asdexbnd", "vbnnmkmP", "poiuh", "zxcvbnmlk", "qwertyuP" };
-        string passwordPattern = "^(?=.*[A-Z])[a-zA-Z]{8}$";
+        //string[] passwordInput = { "qWertyui", "asdmTThl", "asdexbnd", "vbnnmkmP", "poiuh", "zxcvbnmlk", "qwertyuP" };
+        //string passwordPattern = "^(?=.*[A-Z])[a-zA-Z]{8}$";
+        //UC7
+        /// <summary>
+        /// (?=.*[0-9]) At least one number is exist
+        /// </summary>
+        string[] passwordInput = { "qWe90yui", "as6mTThl", "asdexbnd", "vbn9mkmP", "poiuh", "zxcvbnmlk", "6wPrtyuP" };
+        string passwordPattern = "^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8}$";
         public void PatternChecking()
         {
             //Used Predefined Regex Class
