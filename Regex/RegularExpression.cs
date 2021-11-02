@@ -8,24 +8,24 @@ namespace RegExp
     class RegularExpression
     {
         //Create Array to Store The Data
-        string[] input = { "Xyz", "xyz", "Swapnil", "swapnil","5Opq", "Xy", "xYz" };
+        string[] lastName = { "Abc", "abc", "bagul", "Bagul", "5Opq", "Xy", "xYz" };
         //Create Pattern
-        string pattern = "^[A-Z]{1}[a-z]{2,}$";
+        string lastNamePattern = "^[A-Z]{1}[a-z]{2,}$";
 
         public void PatternChecking()
         {
             //Used Predefined Regex Class
-            Regex regex = new Regex(pattern );
-            foreach (string name in input )
+            Regex regex = new Regex(lastNamePattern);
+            foreach (string name in lastName)
             {
                 //Used Predefined IsMatch () Method 
                 if(regex .IsMatch (name))
                 {
-                    Console.WriteLine(name + "--> Valid Name");
+                    Console.WriteLine(name + "--> Valid Last Name");
                 }
                 else
                 {
-                    Console.WriteLine(name + "--> Invalid Name");
+                    Console.WriteLine(name + "--> Invalid Last Name");
                 }
             }
         }
