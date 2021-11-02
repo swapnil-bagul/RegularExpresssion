@@ -12,7 +12,6 @@ namespace RegExp
             //Call Method
             regularExpression.PatternChecking();
             Console.ReadLine();
-
         }
     }
 }

@@ -36,6 +36,7 @@ namespace RegExp
         /// </summary>
         string[] passwordInput = { "qWe90yui", "as6mTThl", "asdexbnd", "vbn9mkmP", "poiuh", "zxcvbnmlk", "6wPrtyuP" };
         string passwordPattern = "^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8}$";
+        // Pattern validating
         public void PatternChecking()
         {
             //Used Predefined Regex Class
