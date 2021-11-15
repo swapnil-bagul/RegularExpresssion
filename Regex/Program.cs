@@ -8,9 +8,9 @@ namespace RegExp
         {
             Console.WriteLine("Hello World!");
             //Create Object
-            RegularExpression regularExpression = new RegularExpression();
+            // RegularExpression regularExpression = new RegularExpression();
             //Call Method
-            regularExpression.PatternChecking();
+            //regularExpression.PatternChecking();
             Console.ReadLine();
         }
     }
